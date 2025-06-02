@@ -1,0 +1,3 @@
+frame.number,frame.time,ip.src,ip.dst,tcp.srcport,tcp.dstport,_ws.col.protocol,frame.len
+"1","Feb  9, 2025 01:29:22.694218255 IST","185.125.190.82","172.20.0.5","80","42272","TCP","1494"
+"2","Feb  9, 2025 01:29:22.694326596 IST","185.125.190.82","172.20.0.5","80","42272","TCP","1494"
