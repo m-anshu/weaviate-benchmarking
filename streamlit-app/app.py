@@ -106,7 +106,7 @@ with tabs[3]:
     st.header("Delete All Schema (Danger Zone)")
     if st.button("Delete All Schema"):
         with st.spinner("Deleting all schema and objects..."):
-            delete_mod.delete_all_schema()
+            delete_mod.delete_all_schema(client)
         st.success("All schema deleted!")
 
 # --- Benchmark Tab ---
@@ -133,7 +133,7 @@ with tabs[5]:
         if os.path.exists(log_path):
             st.subheader(log_file)
             fig = plot_mod.plot_cpu_usage(log_path, log_file) if "cpu" in log_file else plot_mod.plot_memory_usage_mb(log_path, log_file)
-            st.image(f"{log_file.replace('.txt', '.png')}")
+            st.image(f"{log_path.replace('.txt', '.png')}")
         else:
             st.info(f"Log file {log_file} not found.")
 

@@ -1,0 +1,28 @@
+-Weaviate set up :
+version : v1.27.19
+    wget https://github.com/weaviate/weaviate/releases/download/v1.27.19/weaviate-v1.27.19-linux-amd64.tar.gz
+    tar -xvzf weaviate-v1.27.19-linux-amd64.tar.gz
+    chmod +x weaviate
+
+-Virtual environment setup :
+Installing the venv package to enable creating virtual environments :
+    sudo apt install python3-venv
+To create a virtual environment : python3 -m venv <name of virtual env >
+    python3 -m venv wenv
+To activate it : source <name of virtual env>/bin/activate
+    source wenv/bin/activate
+
+-Packages to install :
+!!! NOTE : pip install 'weaviate-client>=3.26.7,<4.0.0'
+
+    psutil
+    weaviate-client
+    seaborn
+    sentence-transformers
+    matplotlib
+    pandas
+
+-To run weaviate client :
+    ./weaviate --host 0.0.0.0 --port 8080 --scheme http
+
+
