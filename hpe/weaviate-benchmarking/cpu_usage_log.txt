@@ -1,0 +1,3 @@
+time_offset,cpu_percent
+0.0,100.0
+0.1,50.0
